@@ -20,6 +20,8 @@ function getData() { firebase.database().ref("/"+room_name).on('value', function
 //End code
       } });  }); }
 getData();
+user_name = localStorage.getItem("user_name"); 
+room_name = localStorage.getItem("room_name");
 function send()
 {
       msg = document.getElementById("msg").value;
